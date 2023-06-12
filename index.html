@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto</title>
+        <!-- favicon-->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!--kit de fontawesome-->
+        <script src="https://kit.fontawesome.com/c538ed8188.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+         <!--estilos externos CORRECTA!!-->
+         <link rel="stylesheet" href="./css/estilos.css">
+        
+    </head>
+    <!--sintaxsis de atributo en linea
+     <body style="background-color: rgb(249, 159, 174);">-->
+    <body>
+       <header class="header">
+
+        <nav class="navbar navbar-expand-lg navbar-dark colorGris">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="./assets/img/codoacodo.png" alt="Logo" width="100px"  class="d-inline-block align-text-top">
+                Conf. Bs.As.
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100 justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#laConferencia">La Conferencia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#losOradores">Los Oradores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#lugarYfecha">Lugar y La Fecha</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#convierteteEnOrador">Conviertete en Orador</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link colorVerde" href="./comprar_tickets.html">Comprar tickets</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+            <section id ="laConferencia" class="laConferencia ">
+               <div class="contenedorTextConf">
+                    <h1>Conferencia Bs.As.</h1>
+                    <p class="parrafoConferencia">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Coco a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                    <div>
+                        <a href="#convierteteEnOrador">Quiero ser orador</a>
+                        <a href="./comprar_tickets.html">Comprar tickets</a>
+                    </div>
+                   
+               </div>
+                
+               
+            </section>
+       </header>
+       <main>
+            <section id="losOradores" class="container mb-5">
+                <h2 class="tituloRadores"><span>CONOCE A LOS</span> <br> ORADORES</h2>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <div class="card" >
+                            <img src="./assets/img/steve.jpg" alt="Steve Jobs" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Steve Jobs</h5>
+                              <p class="card-text">Steven Jobs ​​​​fue un empresario, diseñador industrial, magnate empresarial, propietario de medios e inversor estadounidense. Fue cofundador y presidente ejecutivo de Apple​ y máximo accionista individual de The Walt Disney Company.​</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="card" >
+                            <img src="./assets/img/bill.jpg" alt="Bill Gates" class="card-img-top" >
+                            <div class="card-body">
+                              <h5 class="card-title">Bill Gates</h5>
+                              <p class="card-text">Bill Gates es un magnate empresarial, desarrollador de software, inversor, autor y filántropo estadounidense. Es cofundador de Microsoft, junto con su difunto amigo de la infancia Paul Allen.
+
+                                Ada Lovelace
+                                Negocios Startups
+                                Ada Lovelace
+                                Ada Lovelace, fue la primera en reconocer que la máquina tenía aplicaciones más allá del cálculo puro y en haber publicado lo que se reconoce hoy como el primer algoritmo destinado a ser procesado por </p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="card" >
+                            <img src="./assets/img/ada.jpeg" alt="Ada" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Ada Lovelace</h5>
+                              <p class="card-text">Ada Lovelace, fue la primera en reconocer que la máquina tenía aplicaciones más allá del cálculo puro y en haber publicado lo que se reconoce hoy como el primer algoritmo destinado a ser procesado por una máquina, por lo que se la considera como la primera programadora de ordenadores.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+
+                </div>
+                <!-- 
+                <div class="padreCards">
+                    <div class="card" id="cardUno">
+                        <img src="./assets/img/steve.jpg" alt="Steve Jobs">
+                        <div class="cardBody">
+                            <div class="cardTags">
+                                <h4 class="tituloCardBody">Javascript</h4>
+                                <h4 class="tituloCardBody">React</h4>
+                            </div>
+                            
+                            <h2>Steve Jobs</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam debitis ullam voluptates fugiat nemo, excepturi, distinctio hic quisquam voluptatem quidem sequi! Odio odit aliquam, non molestias repudiandae fugit repellat at!</p>
+                        </div>
+                       
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/bill.jpg" alt="Bill Gates">
+                        <div class="cardBody">
+                            <div class="cardTags">
+                                <h4 class="tituloCardBody">Javascript</h4>
+                                <h4 class="tituloCardBody">React</h4>
+                            </div>
+                            <h2>Bill Gates</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam debitis ullam voluptates fugiat nemo, excepturi, distinctio hic quisquam voluptatem quidem sequi! Odio odit aliquam, non molestias repudiandae fugit repellat at!</p>
+                        </div>
+                      
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/ada.jpeg" alt="Ada">
+                        <div class="cardBody">
+                            <div class="cardTags">
+                                <h4 class="tituloCardBody">Javascript</h4>
+                                <h4 class="tituloCardBody">React</h4>
+                            </div>
+                            <h2>Ada Lovelace</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam debitis ullam voluptates fugiat nemo, excepturi, distinctio hic quisquam voluptatem quidem sequi! Odio odit aliquam, non molestias repudiandae fugit repellat at!</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                -->
+            </section>
+            <section id="lugarYfecha" class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 columnaIzq">
+
+                    </div>
+                    <div class="col-sm-12 col-md-6 columnaDer">
+                        <h2>Bs.As - Octubre</h2>
+                        <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km2 de superficie).</p>
+                        <a href="">Conocé Más</a>
+                    </div>
+                </div>
+                
+            </section>
+            <section id="convierteteEnOrador" class="formularioOrador">
+                <h2><span>CONVIERTETE EN UN </span> <br> ORADOR</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae sunt!</p>
+                <form action="" autocomplete="on">
+                    <div>
+                        <input  class="inputNA" type="text" placeholder="Nombre" required>
+                        <input class="inputNA" type="text" placeholder="Apellido" required>
+                    </div>
+                    <div>
+                        <textarea class="textArea" name="" id="" cols="44" rows="6" placeholder="Sobre que quieres hablar?" required></textarea>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <div>
+                        <input type="submit" value="Enviar" class="formSubmit">
+                    </div>
+                </form>
+            </section>
+       </main>
+     
+       <footer class="footer container-fluid mt-5">
+            <div class="contenedorFooter row text-center gap-3 w-75 h-100 mx-auto">
+                <a class="col-sm-12 col-md-2" href="">Preguntas Frecuentes</a>
+                <a class="col-sm-12 col-md-2" href="">link</a>
+                <a class="col-sm-12 col-md-1" href="">link</a>
+                <a class="col-sm-12 col-md-2" href="">link</a>
+                <a class="col-sm-12 col-md-2" href="">Terminos y Condiciones</a>
+                <a class="col-sm-12 col-md-1" href="">link</a>
+                <a class="col-sm-12 col-md-1" href="">link</a>
+            </div>
+            <a href=""><img class="wsp" src="./assets/img/whatsapp.png" alt="what"></a>
+       </footer>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>

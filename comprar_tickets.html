@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto</title>
+        <!-- favicon-->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!--kit de fontawesome-->
+        <script src="https://kit.fontawesome.com/c538ed8188.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+         <!--estilos externos CORRECTA!!-->
+         <link rel="stylesheet" href="./css/estilos.css">
+        
+    </head>
+    <!--sintaxsis de atributo en linea
+     <body style="background-color: rgb(249, 159, 174);">-->
+    <body>
+       <header class="header">
+
+        <nav class="navbar navbar-expand-lg navbar-dark colorGris">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="./assets/img/codoacodo.png" alt="Logo" width="100px"  class="d-inline-block align-text-top">
+                Conf. Bs.As.
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100 justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#laConferencia">La Conferencia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#losOradores">Los Oradores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#lugarYfecha">Lugar y La Fecha</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#convierteteEnOrador">Conviertete en Orador</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link colorVerde" href="./comprar_tickets.html">Comprar tickets</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+       
+       </header>
+      
+        <main>
+            
+            <section class="container pt-section">
+                <div class="row justify-content-center">
+                   <div class="col-lg-8 col-xl-7">
+                     <div class="row row-cols-1 row-cols-md-3 text-center">
+                         <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                                <div class="card-header py-3 text-white bg-primary border-primary">
+                                    <h4 class="my-0 fw-normal">Estudiante</h4>
+                                </div>
+                                <div class="card-body">
+                                    <p>Tiene un descuento</p>
+                                    <h3 class="card-title pricing-card-title">80%</h3>
+                                    <smaill class="fw-light text-muted mt-3">*Presentar documentación</smaill>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                                <div class="card-header py-3 text-white bg-primary border-primary">
+                                    <h4 class="my-0 fw-normal">Trainee</h4>
+                                </div>
+                                <div class="card-body">
+                                    <p>Tiene un descuento</p>
+                                    <h3 class="card-title pricing-card-title">50%</h3>
+                                    <smaill class="fw-light text-muted mt-3">*Presentar documentación</smaill>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                                <div class="card-header py-3 text-white bg-primary border-primary">
+                                    <h4 class="my-0 fw-normal">Junior</h4>
+                                </div>
+                                <div class="card-body">
+                                    <p>Tiene un descuento</p>
+                                    <h3 class="card-title pricing-card-title">15%</h3>
+                                    <smaill class="fw-light text-muted mt-3">*Presentar documentación</smaill>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                     <h2 class="titulo-gral">Venta <span>Valor de ticket $200</span></h2>
+                    <form action="">
+                       <div class="row gx-2">
+                           <div class="col-md mb-3">
+                              <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="nombre" required>"
+                              <div class="invalid-feedback">Ingrese un nombre válido!</div>
+                           </div>
+                           <div class="col-md mb-3">
+                              <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" id="apellido" required>
+                              <div class="invalid-feedback">Ingrese un apellido válido!</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mb-3">
+                                <input type="email" class="form-control" placeholder="Email" aria-label="Email" id="mail" required>
+                            </div>
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-2 g-3 mb-3">
+                            <div class="col">
+                              <label for="cantidad" class="form-label">Cantidad</label>
+                              <div class="col">
+                                <input type="number" class="form-control" placeholder="cantidad" id="cantidad" required>
+                                <div class="invalid-feedback">Ingrese una cantidad válida!</div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <label for="categorias" class="form-label">Categoría</label>
+                              <select name="" id="categoria" class="form-select text-secondary" required>
+                                <option value="">Seleccione...</option>
+                                <option value="Estudiante">Estudiante</option>
+                                <option value="Trainee">Trainee</option>
+                                <option value="Junior">Junior</option>
+                              </select>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div id="carrito"></div>
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text border-primary" style="background-color: var(--bs-primary-bg-subtle);">Total a Pagar:</span>
+                            <span class="input-group-text border-primary" id="total">0.00</span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="row row-cols-1 row-cols-sm-2 g-3">
+        
+                           
+                            <div class="col">
+                                <button class="btn w-100 text-white" id="borrar" style="background-color: #97c93e;" type="reset">Borrar</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn w-100 text-white" id="resumen" style="background-color: #97c93e;" type="submit">Resumen</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+     
+       <footer class="footer container-fluid mt-5">
+            <div class="contenedorFooter row text-center gap-3 w-75 h-100 mx-auto">
+                <a class="col-sm-12 col-md-2" href="">Preguntas Frecuentes</a>
+                <a class="col-sm-12 col-md-2" href="">link</a>
+                <a class="col-sm-12 col-md-1" href="">link</a>
+                <a class="col-sm-12 col-md-2" href="">link</a>
+                <a class="col-sm-12 col-md-2" href="">Terminos y Condiciones</a>
+                <a class="col-sm-12 col-md-1" href="">link</a>
+                <a class="col-sm-12 col-md-1" href="">link</a>
+            </div>
+            <a href=""><img class="wsp" src="./assets/img/whatsapp.png" alt="what"></a>
+       </footer>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+       <script src="./js/comprar-tickets.js"></script>
+    </body>
+</html>
